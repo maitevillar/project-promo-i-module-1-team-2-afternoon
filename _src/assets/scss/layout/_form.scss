@@ -1,0 +1,100 @@
+span {
+  color: $secondaryColor;
+}
+
+label {
+  padding-top: 25px;
+  color: $textColor;
+  font-family: $secondaryFont;
+}
+
+.form__content {
+  width: 80vw;
+  margin: 0px auto;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+
+  &--mailphone  {
+    @include desktopSize {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--email {
+    input {
+      font-size: 16px;
+      color: $textColor;
+      ::placeholder {
+        font-size: 16px;
+        color: $textColor;
+      }
+      @include desktopSize {
+        width: 38vw;
+      }
+    }
+  }
+
+  &--phone {
+    input {
+      @include desktopSize {
+        width: 38vw;
+      }
+    }
+
+  }
+
+  &--submit {
+    padding-top: 24px;
+
+    input {
+      border-radius: 4px;
+      border: none;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: $mainColor;
+      color: $whiteColor;
+      :hover {
+        background-color: $secondaryColor;
+      }
+      @include desktopSize {
+        width: 38vw;
+      }
+    }
+    @include desktopSize {
+      display: flex;
+      justify-content: flex-end;
+      text-align: end;
+    }
+  }
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: $secondaryFont;
+  color: $placeHolder;
+  border: 1px solid $placeHolder;
+}
+
+textarea {
+  resize: none;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contacto PUZZLE</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik:500&display=swap');
+        </style>
+        <link rel="icon" href="./favicon.png" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
+    </head>
+    
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header-puzzle"> <a class="title" href="../index.html">PUZZLE</a>
+
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li> <a href="./index.html#team">EQUIPO</a>
+
+                        </li>
+                        <li> <a href="./index.html#members">QUIENES SOMOS</a>
+
+                        </li>
+                        <li> <a href="#contact">CONTACTO</a> 
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="hero"></div>
+                <div class="csection">
+                     <h3 class="csection__title" id="contact">Contacto</h3>
+
+                    <section class="csection__text">
+                        <p>Rellena el siguiente formulario y encontraremos la pieza que le falta
+                            a tu rompecabezas</p>
+                         <h5>Todos los campos marcados <span>*</span> son obligatorios.</h5>
+
+                    </section>
+                </div>
+                <div class="form__content">
+                    <form action="https://formspree.io/xyywoylr" method="POST">
+                        <div class="form__content--name">
+                            <label for="full-name">Nombre completo<span>*</span>
+
+                            </label>
+                            <input type="text" name="full-name" id="full-name" placeholder="Nombre..."
+                            required />
+                        </div>
+                        <div class="form__content--mailphone">
+                            <div class="form__content--email">
+                                <label for="email">Email<span>*</span>
+
+                                </label>
+                                <input type="email" name="email" id="email" required placeholder="nombre.apellidos@mail.com">
+                            </div>
+                            <div class="form__content--phone">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" name="phone" id="phone" placeholder="Ej:123456789">
+                            </div>
+                        </div>
+                        <div class="form__content--text">
+                            <label for="message">Mensaje<span>*</span>
+
+                            </label>
+                            <textarea name="message" rows="5" cols="20" placeholder="¿Qué necesitas?"></textarea>
+                        </div>
+                        <div class="form__content--submit">
+                            <input type="submit" value="enviar">
+                        </div>
+                    </form>
+                </div>
+                <footer>
+                    <hr>
+                    <div class="f-wrapper">
+                        <div class="item item--1">Puzzle ©2019</div> <a class="item item--2" href=https://adalab.es target="_blank"></a>
+                        <nav
+                        class="item item--3">
+                            <ul style="list-style-type:none">
+                                <li> <a href="index.html#team" title="equipo">EQUIPO</a>
+                                </li>
+                                <li> <a href="index.html#members" title="miembros">QUIEN SOMOS</a>
+                                </li>
+                                <li> <a href="contact.html" title="contacto">CONTACTO</a>
+                                </li>
+                            </ul>
+                            </nav>
+                    </div>
+                </footer>
+        </div>
+    </body>
+
+</html>

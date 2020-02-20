@@ -1,0 +1,158 @@
+.members{
+    width: $fullwidth;
+    display: flex;
+    justify-content: center;
+    &__container{
+        max-width: 1400px;
+        min-width: 200px; /*min-width=180+10+10px*/
+        padding: 7vw;
+        @include tabletSize{
+            padding: 3vw;
+        }
+        @include desktopSize{
+            padding: 1vw;
+        }
+        .m__title{
+            font-family: $mainFont, 'Open Sans';
+            text-align: center;
+            font-size: 24px;
+            color: $mainColor;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @include tabletSize{
+                margin-top: 45px;
+                margin-bottom: 45px;    
+            }
+        }
+        .m__card{
+            width: 100%;
+            font-family: $secondaryFont;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 45px;
+            @include tabletSize{
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 60px;
+                &--ana-belen,&--maite{
+                    flex-direction: row-reverse;
+                }
+            }
+
+        }
+    }
+}
+
+.m__picture{
+    height: 180px;
+    width: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 5px solid #D4D3D3;
+    background-position: center;
+    background-size: cover;
+    transition: box-shadow ease 1s;
+    &:hover{
+        box-shadow: 8px 8px 12px #888888;
+        transition: box-shadow ease 1s;
+    }
+    &--ana{
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5DBR7-3e76dcf02272-512);
+    }
+    &--ana-belen{
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK56P09-2d22f5df5e45-512);
+    }
+    &--beatriz{
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-USZK5FTLZ-18441b3a0b58-512);
+    }
+    &--maite{
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSEL05-53eb30c74f26-512);
+    }
+    &--romi{
+        background-image: url(https://ca.slack-edge.com/T2Q8FS5QB-UT9QSUUBX-286f57c0b014-512);
+    }
+    @include tabletSize{
+        height: 205px; 
+        width: 205px; 
+    }
+    @include desktopSize{
+        height: 278px;
+        width: 278px;
+    }
+}
+
+.m__cv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tabletSize{
+        margin-left: 45px;
+        align-items: flex-start;
+        &--ana-belen,&--maite{
+            align-items: flex-end;
+            margin-left: 0px;
+            margin-right: 45px;
+        }
+    }
+    @include desktopSize{
+        margin-right: 250px;
+        &--ana-belen,&--maite{
+            margin-right: 45px;
+        }
+
+    }
+
+    .m__name{
+        color: black;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .m__bio{
+        color: $textColor;
+        font-size: 16px;
+        line-height: 1.5rem;
+        text-align: center;
+        margin-bottom: 0px;
+        max-width: 440px;
+        @include tabletSize{
+            text-align: left;
+            &--ana-belen,&--maite{
+                text-align: right;
+            }
+        }
+
+    }
+    .m__contact{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 124px;
+        .m__link{
+            color: $mainColor;
+            transition: color ease 1s;
+            font-size: 16px;
+            &:hover{
+                color: $textColor;
+                transition: color ease 1s;
+            }
+        }
+        .m__dot{
+            display: inline-block;
+            width: 1px;
+            height: 1px;
+            border-radius: 0.5px;
+            background-color: black;
+        }
+        
+    }
+}

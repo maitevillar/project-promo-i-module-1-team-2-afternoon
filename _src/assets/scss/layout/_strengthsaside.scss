@@ -1,0 +1,52 @@
+
+.strenghts-weakness {
+    background-color: #F1F1F1;
+    position: relative;
+
+    .triangle {
+        width: $triangleSize;
+        height: $triangleSize;
+        background-color: $whiteColor;
+        transform: rotate(135deg);
+        border-radius: 0 0 0 100%;
+        position: absolute;
+        top: -15px;
+        left: calc(50vw - 15px);
+    }
+}
+
+
+.sw-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 15px 45px 15px;
+    
+    @include tabletSize{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;    
+        padding: 45px 45px 60px 45px; 
+    }
+}
+
+.strenghts , .weakness{
+    width: 50%;
+}
+
+.sw-container h4 {
+    font-family: $mainFont;
+    font-size: $headerFontSize;
+    line-height:$headerLineHeight;
+    color:$mainColor;
+    margin-top: 30px;
+}
+   
+.sw-container p {
+    font-family: $secondaryFont;
+    color:$textColor;
+    line-height: $textLineHeight;
+    
+}

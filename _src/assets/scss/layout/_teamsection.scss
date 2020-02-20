@@ -1,0 +1,42 @@
+
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 15px 60px 15px;
+  background-color: $whiteColor;
+
+  &__title {
+    font-size: 24px;
+    width: 89px;
+    height: 45px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: $secondaryColor;
+    font-family: $mainFont;
+  }
+  &__text {
+    margin: 0px auto;
+  
+    p {
+
+      font-size: 1rem;
+      line-height: 1.5;
+      letter-spacing: normal;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      text-align: center;
+      color: $textColor;
+      font-family: $secondaryFont;
+    }
+  }
+}
+

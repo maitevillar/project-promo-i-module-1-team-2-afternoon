@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contacto PUZZLE</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik:500&display=swap');
+        </style>
+        <link rel="icon" href="./favicon.png" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
+    </head>
+    
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header-puzzle"> <a class="title" href="../index.html">PUZZLE</a>
+
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li> <a href="./index.html#team">EQUIPO</a>
+
+                        </li>
+                        <li> <a href="./index.html#members">QUIENES SOMOS</a>
+
+                        </li>
+                        <li> <a href="#contact">CONTACTO</a> 
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="hero"></div>
+                <div class="csection">
+                     <h3 class="csection__title" id="contact">Contacto</h3>
+
+                    <section class="csection__text">
+                        <p>Somos diferentes piezas de un puzzle. Cada una aporta una parte esencial
+                            al equipo para desarrollar un proyecto. Enlazando cada una de nuestras
+                            capacidades somos capaces de trabajar de una forma eficiente, original
+                            y resolutiva.</p>
+                        <p>No conocemos límites, marcamos unos objetivos y trabajamos cada día para
+                            superarlos</p>
+                         <h5>Todos los campos marcados <span>*</span> son obligatorios.</h5>
+
+                    </section>
+                </div>
+                <div class="form__content">
+                    <form action="https://formspree.io/xyywoylr" method="POST">
+                        <div class="form__content--name">
+                            <label for="full-name">Nombre completo<span>*</span>
+
+                            </label>
+                            <input type="text" name="full-name" id="full-name" placeholder="Nombre..."
+                            required />
+                        </div>
+                        <div class="form__content--email">
+                            <label for="email">Email<span>*</span>
+
+                            </label>
+                            <input type="email" name="email" id="email" required placeholder="nombre.apellidos@mail.com">
+                        </div>
+                        <div class="form__content--phone">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Ej:123456789">
+                        </div>
+                        <div class="form__content--text">
+                            <label for="message">Mensaje<span>*</span>
+
+                            </label>
+                            <textarea name="message" rows="5" cols="20" placeholder="¿Qué necesitas?"></textarea>
+                        </div>
+                        <div class="form__content--submit">
+                            <input type="submit" value="enviar">
+                        </div>
+                    </form>
+                </div>
+                <footer>
+                    <div class="f-wrapper" id="footer">
+                        <hr>
+                        <div class="f-container-copy">Puzzle ©2019</div>
+                        <nav class="f-container-nav">
+                            <ul style="list-style-type:none">
+                                <li> <a href="./index.html#team">EQUIPO</a>
+                                </li>
+                                <li> <a href="./index.html#members">QUIEN SOMOS</a>
+                                </li>
+                                <li> <a href="#contact">CONTACTO</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="logo-adalab">
+                            <img src="./assets/images/adalablogo.jpg" alt="logo adalab">
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </body>
+
+</html>

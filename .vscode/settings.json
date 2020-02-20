@@ -1,0 +1,12 @@
+{
+<<<<<<< HEAD
+    "liveServer.settings.port": 5501
+=======
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+>>>>>>> master
+}
