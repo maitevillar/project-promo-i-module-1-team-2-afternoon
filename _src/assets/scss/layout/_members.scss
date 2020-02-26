@@ -1,11 +1,13 @@
 .members{
-    width: $fullwidth;
+    width: 100%;
     display: flex;
     justify-content: center;
+   
     &__container{
         max-width: 1400px;
         min-width: 200px; /*min-width=180+10+10px*/
         padding: 7vw;
+       
         @include tabletSize{
             padding: 3vw;
         }

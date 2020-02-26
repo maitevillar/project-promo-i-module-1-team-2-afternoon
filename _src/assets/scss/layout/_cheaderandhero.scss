@@ -21,7 +21,7 @@
     opacity: 0.95;
     padding: 0.93rem;
     height: 3.75rem;
-    width: $fullwidth;
+    width: 100%;
     }
 
 
@@ -65,7 +65,7 @@
     width: $fullwidth;
 
     @include tabletSize {
-        width: 100vw;
+        width: 100%;
         padding-top: 22.5px;
         background-color: $mainColor;
         opacity: 0.9;
