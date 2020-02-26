@@ -102,6 +102,12 @@
             padding-bottom: 0.43rem;
             left: 1rem;
             right: 1.06rem;
+            
+
+            &:hover{
+                text-decoration: underline;
+                font-size: 1rem;
+            }
         }
     }
 

@@ -68,6 +68,11 @@ html {
   right: 1.06rem;
 }
 
+.menu ul li a:hover {
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
 .hero {
   background: url(../images/computer.jpg);
   background-repeat: no-repeat;
