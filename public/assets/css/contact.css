@@ -10,6 +10,7 @@ html {
 }
 
 .header {
+  width: 100%;
   position: fixed;
   top: 0px;
   z-index: 3;
@@ -17,11 +18,11 @@ html {
 }
 
 .header .header-puzzle {
+  width: 100%;
   background-color: #099D8D;
   opacity: 0.95;
   padding: 0.93rem;
   height: 3.75rem;
-  width: 100%;
 }
 
 .header .title {
@@ -313,6 +314,19 @@ hr {
     top: 0;
   }
 
+  .header .header-puzzle {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .header .title {
     text-align: left;
     margin-left: 2.81rem;
@@ -329,6 +343,7 @@ hr {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-top: 0;
   }
 
   .menu {
