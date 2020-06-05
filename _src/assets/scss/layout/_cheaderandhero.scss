@@ -111,13 +111,9 @@
 }
 
 .hero {
-    background: url(../images/computer.jpg);
+    background: url(../images/back.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    background-position: right;
     height: 65vh;
 
     @include tabletSize {
@@ -130,7 +126,6 @@
     @include desktopSize{
         justify-content: flex-start;
         height: 60vh;
-        background: url(../images/computer.jpg);
         background-position: center;
         background-size: cover;
     }

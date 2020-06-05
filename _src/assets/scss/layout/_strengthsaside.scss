@@ -19,21 +19,20 @@
 .sw-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 5px 15px 45px 15px;
+    padding: 25px 15px 45px 15px;
     
     @include tabletSize{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;    
-        padding: 45px 45px 60px 45px; 
+        flex-direction: row;   
+        padding: 55px 185px 70px 185px; 
     }
 }
 
 .strenghts , .weakness{
-    width: 50%;
+    width: 40%;
+    min-width: 400px;
 }
 
 .sw-container h4 {

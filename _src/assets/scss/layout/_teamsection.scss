@@ -21,10 +21,20 @@
     text-transform: uppercase;
     color: $secondaryColor;
     font-family: $mainFont;
+    
   }
+
   &__text {
     margin: 0px auto;
-  
+    min-width: 400px;
+    padding: 45px 85px 30px 85px; 
+    text-align: justify;
+    
+    @include tabletSize{
+      max-width: 1000px;
+      padding: 45px 185px 60px 185px; 
+    }
+    
     p {
 
       font-size: 1rem;
