@@ -33,5 +33,3 @@ Cada uno de los miembros son presentados mediante una fotografía, un pequeño t
 ### Footer
 La parte final de la web ofrece otro menú de navegación para acceder a cada una de las secciones de la web. Además, contiene el logo de Adalab.
 
-### Form
-A través del cualquiera de los dos menús de navegación podemos acceder a otra página que es un formulario de contacto. Gracias a él, cualquier persona puede contactar con el equipo y enviar un mensaje.
